@@ -4,8 +4,8 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "start": "parcel index.html",
-    "start:prod": "parcel build index.html",
+    "start": "parcel",
+    "start:prod": "parcel build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
