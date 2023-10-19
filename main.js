@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", onInit);
 function onInit() {
 	initListenerForSmoothScrolling();
 	initScrollListenerForParallaxEffect();
+	initListenerForAnimBurgerAndNav();
 }
 
 function initListenerForSmoothScrolling() {
@@ -31,3 +32,12 @@ function initScrollListenerForParallaxEffect() {
 	});
 }
 
+function initListenerForAnimBurgerAndNav() {
+	const burger = document.querySelector('.header__burger');
+	const nav = document.querySelector('.header-mobile__nav');
+
+	burger.addEventListener('click', () => {
+		burger.classList.toggle('header__burger-open');
+		nav.classList.toggle('header-mobile__nav_open');
+	})
+}
