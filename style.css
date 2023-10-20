@@ -15,6 +15,10 @@ html {
 	--accent-blue-text-color: #0C669D;
 }
 
+html {
+	overflow-x: hidden;
+}
+
 body {
 	font-family: 'Kanit', sans-serif;
 	color: var(--basic-text-color);
@@ -124,6 +128,22 @@ p {
 	transition: background-color .3s;
 }
 
+.header-mobile__nav-wrap {
+	overflow: hidden;
+	width: 100%;
+	height: 300px;
+
+	position: absolute;
+	right: 0px;
+	top: 78.5px;
+
+	pointer-events: none;
+}
+
+.header-mobile__nav-wrap:has(.header-mobile__nav_open) {
+	pointer-events: auto;
+}
+
 .header-mobile__nav {
 	display: flex;
     flex-direction: column;
@@ -144,10 +164,8 @@ p {
 	backdrop-filter: blur(4px);
 
 	opacity: 1;
-	top: 78.5px;
 	border-top-left-radius: 20px;
 	border-bottom-left-radius: 20px;
-	
 }
 
 .header-mobile__nav_open {

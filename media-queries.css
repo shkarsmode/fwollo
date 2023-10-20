@@ -180,7 +180,7 @@
 
 @media (max-width: 600px) {
 	h1 {
-		font-size: 50px;
+		font-size: 41px;
 	}
 
 	h2 {
@@ -193,6 +193,10 @@
 
 	h5 {
 		font-size: 16px;
+	}
+
+	.banner__title_small {
+		margin-bottom: 20px;
 	}
 }
 
