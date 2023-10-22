@@ -144,6 +144,13 @@ p {
 	pointer-events: auto;
 }
 
+.nav__item a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	column-gap: 12px;
+}
+
 .header-mobile__nav {
 	display: flex;
     flex-direction: column;
